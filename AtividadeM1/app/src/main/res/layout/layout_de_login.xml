@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:id="@+id/textTituloSecret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Horas"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#0F5132"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Nome de Usuário"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Senha"
+        android:textColorHint="#888888"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Entrar"
+        android:backgroundTint="#0F5132"
+        android:textSize="16sp"/>
+</LinearLayout>

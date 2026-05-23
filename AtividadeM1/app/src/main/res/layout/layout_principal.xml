@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Painel Superior com ConstraintLayout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#D1E7DD"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome Utilizador: "
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0F5132"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textMatricula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matrícula Utilizador: "
+            android:textColor="#0F5132"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/textNome"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textLotacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lotação Utilizador: "
+            android:textColor="#0F5132"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/textMatricula"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textFuncao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Função Utilizador: "
+            android:textColor="#0F5132"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/textLotacao"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Área dinâmica de horas -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutHoras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Os campos serão criados dinamicamente via Java -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Botões de Ação na base -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F8F9FA">
+
+
+        <TextView
+            android:id="@+id/textContador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculando..."
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnPartilhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0F5132"
+            android:text="Exportar Relatório" />
+    </LinearLayout>
+</LinearLayout>
