@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="200dp"
+        android:text="Tirar Foto" />
+
+    <TextView
+        android:id="@+id/txtCoordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="As Coordenadas GPS aparecerão aqui"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewHolderFullSize"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:background="#DDDDDD"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtJsonPayload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="A String JSON aparecerá aqui"
+        android:textSize="12sp"
+        android:typeface="monospace" />
+
+</LinearLayout>
